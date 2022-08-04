@@ -104,6 +104,7 @@ h2{
     color: rgb(40, 38, 38);
     text-align: center;
     margin-top: 50px;
+  
 }
 .inputSection{
     background-color:grey;
@@ -116,9 +117,10 @@ h2{
 .inputSection input{
     margin-right: 10px;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid whitesmoke;
     background-color: rgb(104, 97, 97);
+    
  
 }
 input ::placeholder{
@@ -131,9 +133,18 @@ input ::placeholder{
     padding: 4px;
     border: 1px solid whitesmoke;
 }
-.listContainer{background-color:grey;
-height: 20px;
-width: 100%;
-
-
+.table{
+  margin-left: 550px;
+  margin-top: 30px;
+  border: 1px solid whitesmoke;
+  width: 190px;
+  background-color: rgb(104, 97, 97);
+  padding: 3px;
+  border-radius: 10px;
+ 
+}
+.deleteIcon{
+    color:white;
+    float: end;
+    cursor: pointer;
 }

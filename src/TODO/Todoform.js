@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./todo.css";
 import { BiTrash } from "react-icons/bi";
+import Table from 'react-bootstrap/Table';
 
 const Todoform = () => {
   const [input, setInput] = useState("");
@@ -49,11 +50,24 @@ const Todoform = () => {
       </div>
 
       {todolist.map((data, index) => (
-        <div className="listContainer">
-          <h1 className="listItem" key={index}>
+        <div className="tableContainer">
+          <Table className="table" striped bordered hover size="sm">
+    
+      <tbody>
+        <tr>
+          <td>{data}</td>
+          <td><BiTrash className="deleteIcon" onClick={() => deleteTodo(index)} /></td>
+          
+        </tr>
+      
+        
+      </tbody>
+    </Table>
+
+          {/* <h1 className="listItem" key={index}>
             {data}{" "}
             <BiTrash className="deleteIcon" onClick={() => deleteTodo(index)} />
-          </h1>
+          </h1> */}
         </div>
       ))}
     </div>
